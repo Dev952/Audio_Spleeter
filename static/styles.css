@@ -1,0 +1,121 @@
+/*CSS Reset*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+
+/*Navigation Bar*/
+#navbar{
+    display:flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*Navigation Bar: Logo and Image*/
+#logo{
+      margin:-31px -44px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 37px 51px;
+    mix-blend-mode:luminosity;
+    
+
+}
+
+/*Navigation Bar: List Styling*/
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #dcccaa;
+    padding: 0px;
+   
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /*color:white;*/
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+   color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+ }
+ 
+ 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-acoustic-guitar-guitar-line-guitar-icon-guitarguitarmusical-instrumentguitar-icon-png-image_571635.jpg')
+    , url(d.jpg) ,url(headphone.jpg);
+    background-repeat: no-repeat ;
+    background-position-y: bottom , bottom ,85px;
+    background-position-x: right , left , 550px;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dcccaa;
+}
+
+
+.container {
+    text-align: center;
+    background-color: #dcccaa;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(143, 60, 0);box-shadow: 0 4px 8px rgba(18, 17, 17, 0.751);
+    animation: shine infinite;
+    }
+    
+
+button {
+    background-color: burlywood;
+    color: rgb(143, 60, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.550s, box-shadow 0.55s;
+  }
+
+button:hover {
+    background-color: #e6d095e5;
+    box-shadow: 0 4px 8px rgba(18, 17, 17, 0.751);
+}
+
+#uploadStatus {
+    margin-top: 20px;
+}
